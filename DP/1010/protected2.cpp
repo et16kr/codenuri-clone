@@ -6,7 +6,7 @@ class Car
 public:
     Car() {}
 
-    void Destroy() { delete this;}
+    void Destroy() { delete this;} // 소멸자 역할
 protected:
     ~Car(){ cout << "~Car" << endl;}
 };
