@@ -1,0 +1,6 @@
+1. std::printf()처럼 네임스페이스 있게, 없게 모두 사용 할 수 있도록 세팅하는 방법,
+    void foo();
+    namespace Audio{
+        using ::foo;
+    }
+    foo(), Audio::foo() 둘다 사용 가능
